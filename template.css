@@ -12,8 +12,13 @@ font-family: 'Shadows Into Light Two', cursive;
 #91EC9E GREEN
 #D8FFDF LIGHT BLUE
 #66C8D1 BLUE */
+html {
+  overflow-y: scroll;
 
+}
 body {
+
+
   margin: 0;
   font-family: 'Righteous', cursive;
   background-color: #FFC3BD;
@@ -33,16 +38,6 @@ body {
   text-decoration: none;
   font-size: 17px;
 }
-h1{
-  text-align: center ;
-}
-h2{
-  text-align: center ;
-}
-body{
-  text-align: center
-}
-
 
 .topnav a:hover {
   background-color: #D8FFDF;
@@ -86,70 +81,78 @@ body{
   color: grey;
 }
 
-/* dropdown */
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-.navbar {
-    overflow: hidden;
-    background-color: #333;
-    font-family: Arial, Helvetica, sans-serif;
+h1{
+  text-align: center;
 }
 
-.navbar a {
+.container {
+    border: 2px solid #ffffff;
+    background-color: 	#ADD8E6;
+    border-radius: 20px;
+    padding: 5px;
+    margin: 5px 0;
+}
+
+}
+/* Darker chat container */
+.darker {
+    border-color: 	#ffffff;
+    background-color: 	#ffdab9;
+
+}
+
+.alignRight{
+  content: right;
+    background-color: 	#ffdab9;
+
+}
+.alignLeft{
+  content:right;
+    background-color:	#ADD8E6;
+
+}
+
+/* Clear floats */
+.container::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Style images */
+.container img {
     float: left;
-    font-size: 16px;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+    max-width: 100px;
+    width: 50%;
+    margin-right: 30px;
+    border-radius: 20%;
+
 }
 
-.amusement {
+/* Style the right image */
+.container img.right {
+    float: right;
+    margin-left: 80px;
+    margin-right:30px;
+}
+
+/* Style time text */
+.time-right {
+    float: right;
+    color: 	#ffdab9;
+}
+
+/* Style time text */
+.time-left {
     float: left;
-    overflow: hidden;
+    color: #ADD8E6;
 }
+p{font-size:15pt ;
+  color:#ffffff;
+   font-family: 'Rajdhani', sans-serif;
 
-.amusement.dropbtn {
-    cursor: pointer;
-    font-size: 16px;
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
 }
-
-.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
-  background-color: #66C8D1;
-  color: white;
+div{
+  text-align: center;
 }
-
-.amusement-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
 }
-
-.amusement-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-.amuseme-content a:hover {
-    background-color: #ddd;
-}
-
-.show {
-    display: block;
-}
-</style>
